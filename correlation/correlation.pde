@@ -31,7 +31,7 @@ void draw(){
   for(int i = 0; i < width; i++){
     line(i - 1, a * i - a + b, i, a * i + b);
   }
-  float r = getKyo() / (getSX() * getSY());
+  float r = getKyo() / (sqrt(getSX()) * sqrt(getSY()));
   popMatrix();
   text("r = " + r, 10, 10);
 }
